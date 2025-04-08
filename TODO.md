@@ -1,0 +1,9 @@
+- [] write a frontend that: 
+     - takes a list of research topics from the user
+     - displays the research notes in a user-friendly format 
+     - saves to a db 
+     - allows the user to edit and delete notes
+     - allows the user to add new notes
+     - allows the user to search for notes by keyword
+     - searchable notes
+     - ability to save notes to notion / note-taking app of choice? 
