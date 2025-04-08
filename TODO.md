@@ -1,4 +1,4 @@
-- [] write a frontend that: 
+- [ ] write a frontend that: 
      - takes a list of research topics from the user
      - displays the research notes in a user-friendly format 
      - saves to a db 
