@@ -1,6 +1,5 @@
-from research_agent import ResearchAgent
-from notes_agent import NotesAgent
-from shared_memory import SharedMemory
+from agents.research_agent import ResearchAgent
+from shared.shared_memory import SharedMemory
 from config import *
 import time
 import os
@@ -13,7 +12,6 @@ def main():
     
     # Initialize agents
     research_agent = ResearchAgent(SCRAPYBARA_API_KEY, memory)
-    notes_agent = NotesAgent(memory, NOTES_FILE_PATH)
     
     try:
         # Set up research agent
@@ -25,13 +23,11 @@ def main():
             research_agent.search_topic(topic)
             
             # Notes agent processes the research
-            notes_agent.process_research(topic)
             
             # Small delay between topics
             time.sleep(2)
         
         # Generate summary of all research
-        notes_agent.summarize_all_research()
         
         print(f"\nCollaborative task completed! Research notes saved to {NOTES_FILE_PATH}")
         
