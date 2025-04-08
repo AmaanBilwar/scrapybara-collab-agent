@@ -21,7 +21,7 @@ cdp_url = instance.browser.start().cdp_url
 playwright = sync_playwright().start()
 browser = playwright.chromium.connect_over_cdp(cdp_url)
 
-prompt = "Go to the top link on Hacker News"
+prompt = ''''''
 
 response = client.act(
     model=OpenAI(),
@@ -31,7 +31,7 @@ response = client.act(
         EditTool(instance),
     ],
     system=UBUNTU_SYSTEM_PROMPT,
-    prompt="Go to the top link on Hacker News",
+    prompt=f"{prompt}",
     on_step=lambda step: print(step.text),
 )
 
