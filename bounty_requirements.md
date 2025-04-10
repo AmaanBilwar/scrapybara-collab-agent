@@ -9,6 +9,6 @@
 
 ## active bounties
 
-1. Agents playing video games - $200
-    - Get LLMs to play video games via the GUI!
-    - Include a cool demo implementation - props if it’s generalizable (can play different games)
+Answer engine with computer use - $300
+Perplexity-like answer engine where one of the tools is computer use - like our act() and scrape() APIs
+Prioritize good UI/UX and a smooth agentic loop
